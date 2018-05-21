@@ -1,0 +1,99 @@
+<%- include ../public/header.ejs%>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <%- include  ../public/left.ejs%>
+			
+          
+        </div>
+        <div class="col-sm-10">
+            <ol class="breadcrumb">
+                <li class="active"><a href="/admin/product">商品管理</a>
+                </li>
+                <li class="active">添加商品
+                </li>
+            </ol>
+            <div class="panel panel-default">
+              
+			    <div class="panel-heading">
+                  增加商品
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive input-form" >
+                        <form action="/admin/product/doAdd"  method="post" enctype="multipart/form-data">
+                            <ul style="margin-top:30px">
+                                <li>
+
+                                        <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1">商品名称</span>
+                                                <input type="text"  name="title" style="width:400px" class="form-control" placeholder="商品名称" aria-describedby="basic-addon1">
+                                              </div>
+
+                                </li>
+                                <!-- <li>  商品名称: <input type="text" name="title"  style="border-radius:10px;"/></li> -->
+
+
+                                <li>
+
+                                        <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1">商品图片</span>
+                                                <input type="file"  name="pic" style="width:400px" class="form-control" placeholder="商品图片" aria-describedby="basic-addon1">
+                                              </div>
+
+                                </li>
+
+                                <!-- <li>  商品图片: <input type="file"  name="pic"/></li> -->
+
+
+                                <li>
+
+                                        <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1">商品价格</span>
+                                                <input type="text" name="price" name="title" style="width:400px" class="form-control" placeholder="商品价格" aria-describedby="basic-addon1">
+                                              </div>
+
+                                </li>
+                                <!-- <li>  商品价格: <input type="text" name="price"/></li> -->
+
+                                <li>
+
+                                        <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1">商品邮费</span>
+                                                <input type="text" name="fee" style="width:400px" class="form-control" placeholder="商品邮费" aria-describedby="basic-addon1">
+                                              </div>
+
+                                </li>
+
+                               <!-- <li>  商品邮费: <input type="text" name="fee"/></li> -->
+
+                                <li> 
+                                    商品描述:
+                                    <div class="form-group">
+                                            <textarea name="description" style="width:400px" class="form-control" cols="60" rows="8"></textarea>
+                                          </div>
+                                    <!-- <textarea name="description" id="" cols="60" rows="8"></textarea> -->
+
+                                </li>
+
+                                <li>
+                                    <br/>
+                                    <button type="submit" class="btn btn-success">提交</button>
+                                </li>
+
+                            </ul>
+
+
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

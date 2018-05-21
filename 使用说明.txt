@@ -1,0 +1,8 @@
+1.启动系统：在cmd输入 supervisor ./app.js
+2.npm i 会安装package.json所有的依赖
+3.登录url: /admin/login;
+  产品url: /admin/product;
+  用户url: /admin/user;   
+4.数据库：productManager
+  mongo;
+  集合:user product
